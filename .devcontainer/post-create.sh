@@ -12,3 +12,8 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/debian/$(lsb_r
 
 sudo apt-get update
 sudo apt-get install azure-functions-core-tools-4
+
+
+
+
+sudo apt-get install -y python3-venv
