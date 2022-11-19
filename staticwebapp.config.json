@@ -1,0 +1,8 @@
+{
+	"routes": [
+		{
+			"route": "/api/test",
+			"rewrite": "/api/HttpTrigger1"
+		}
+	]
+}
