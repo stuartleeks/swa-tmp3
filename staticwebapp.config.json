@@ -3,6 +3,10 @@
 		{
 			"route": "/api/test",
 			"rewrite": "/api/HttpTrigger1"
+		},
+		{
+			"route": "/test",
+			"rewrite": "/api/HttpTrigger1"
 		}
 	]
 }
