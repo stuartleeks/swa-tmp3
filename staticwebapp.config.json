@@ -7,6 +7,10 @@
 		{
 			"route": "/test",
 			"rewrite": "/api/HttpTrigger1"
+		},
+		{
+			"route": "/test2",
+			"redirect": "/api/HttpTrigger1"
 		}
 	]
 }
