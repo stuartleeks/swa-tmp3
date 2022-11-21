@@ -20,13 +20,24 @@
     },
     {
       "type": "func",
-      "label": "func: host start",
+      "label": "func: host start (api)",
       "command": "host start",
       "problemMatcher": "$func-node-watch",
       "isBackground": true,
       "dependsOn": "npm install (functions)",
       "options": {
         "cwd": "${workspaceFolder}/api"
+      }
+    },
+    {
+      "type": "func",
+      "label": "func: host start (back-end)",
+      "command": "host start",
+      "problemMatcher": "$func-node-watch",
+      "isBackground": true,
+      "dependsOn": "npm install (functions)",
+      "options": {
+        "cwd": "${workspaceFolder}/back-end"
       }
     },
     {
