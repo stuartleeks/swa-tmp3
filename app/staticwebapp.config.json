@@ -1,6 +1,14 @@
 {
 	"routes": [
 		{
+			"route": "/_login",
+			"rewrite": "/.auth/login/aad"
+		},
+		{
+			"route": "/_logout",
+			"rewrite": "/.auth/logout"
+		},
+		{
 			"route": "/api/test",
 			"rewrite": "/api/HttpTrigger1"
 		},
@@ -16,17 +24,36 @@
 			"route": "/_admin/*",
 			"methods": [
 				"GET"
+			],
+			"allowedRoles": [
+				"admin"
+			]
+		},
+		{
+			"route": "/.auth/*",
+			"methods": [
+				"GET",
+				"POST"
 			]
 		},
 		{
 			"route": "/_admin*",
 			"methods": [
 				"GET"
+			],
+			"allowedRoles": [
+				"admin"
 			]
 		},
 		{
-			"route": "/zz*",
+			"route": "/*",
 			"rewrite": "/api/redirect"
 		}
-	]
+	],
+	"responseOverrides": {
+		"401": {
+			"redirect": "/.auth/login/aad?post_login_redirect_uri=.referrer",
+			"statusCode": 302
+		}
+	}
 }
