@@ -13,6 +13,18 @@
 			"redirect": "/api/HttpTrigger1"
 		},
 		{
+			"route": "/_admin*",
+			"methods": [
+				"GET"
+			]
+		},
+		{
+			"route": "/_admin/*",
+			"methods": [
+				"GET"
+			]
+		},
+		{
 			"route": "/*",
 			"rewrite": "/api/redirect"
 		}
