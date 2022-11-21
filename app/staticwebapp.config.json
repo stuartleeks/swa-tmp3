@@ -13,13 +13,13 @@
 			"redirect": "/api/HttpTrigger1"
 		},
 		{
-			"route": "/_admin*",
+			"route": "/_admin/*",
 			"methods": [
 				"GET"
 			]
 		},
 		{
-			"route": "/_admin/*",
+			"route": "/_admin*",
 			"methods": [
 				"GET"
 			]
