@@ -5,6 +5,13 @@
       "direction": "in",
       "queueName": "redirects",
       "name": "redirectMessage"
+    },
+    {
+      "type": "signalR",
+      "direction": "out",
+      "name": "signalRMessages",
+      "hubName": "serverless",
+      "connection": "AzureSignalRConnectionString"
     }
   ],
   "scriptFile": "../dist/ServiceBusQueueTrigger/index.js"
