@@ -14,7 +14,7 @@ module.exports = async function (context, req) {
     const originalPath = new URL(originalUrl).pathname
     context.log("Original Path: " + originalPath);
 
-    const redirectUrl = redirects[originalPath] ?? "https://wsl.tips";
+    const redirectUrl = redirects[originalPath] ? redirects[originalPath] : "https://wsl.tips";
     context.log("Redirecting to: " + redirectUrl);
 
     context.res = {
