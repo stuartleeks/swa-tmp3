@@ -18,14 +18,14 @@ module.exports = async function (context, req) {
     context.log("Redirecting to: " + redirectUrl);
 
     context.res = {
-        // status: 302,
-        // body: "Nothing to see here...",
-        body: JSON.stringify({
-            ctx: context,
-            originalUrl,
-            originalPath,
-            redirectUrl
-        }),
+        status: 302,
+        body: "Nothing to see here...",
+        // body: JSON.stringify({
+        //     ctx: context,
+        //     originalUrl,
+        //     originalPath,
+        //     redirectUrl
+        // }),
         headers: {
             "Location": redirectUrl
         }
