@@ -36,19 +36,19 @@
 			"redirect": "/api/HttpTrigger1"
 		},
 		{
+			"route": "/.auth/*",
+			"methods": [
+				"GET",
+				"POST"
+			]
+		},
+		{
 			"route": "/_admin/*",
 			"methods": [
 				"GET"
 			],
 			"allowedRoles": [
 				"admin"
-			]
-		},
-		{
-			"route": "/.auth/*",
-			"methods": [
-				"GET",
-				"POST"
 			]
 		},
 		{
