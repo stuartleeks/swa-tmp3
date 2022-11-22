@@ -1,6 +1,6 @@
 
 const redirects = {
-    "/api/test2": "https://stuartleeks.com",
+    "/wsl": "https://wsl.tips",
     "/stuartleeks": "https://stuartleeks.com",
     "/microsoft": "https://microsoft.com",
 }
