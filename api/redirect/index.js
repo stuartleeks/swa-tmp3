@@ -37,7 +37,7 @@ module.exports = async function (context, req) {
 }
 
 function getRedirectForPath(originalPath) {
-    return redirects[originalPath] ? redirects[originalPath] : "https://wsl.tips";
+    return redirects[originalPath] ?? "https://wsl.tips";
 }
 
 function getOriginalPath(req, context) {
