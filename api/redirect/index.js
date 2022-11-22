@@ -17,6 +17,7 @@ module.exports = async function (context, req) {
     context.log("Sending service bus message");
     context.bindings.redirectQueue = {
         path: originalPath,
+        redirectUrl
     };
     
     // redirect the client
