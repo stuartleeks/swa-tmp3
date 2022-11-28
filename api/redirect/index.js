@@ -8,6 +8,7 @@ const redirects = {
     "/stuartleeks": "https://stuartleeks.com",
     "/jamiedalton": "https://jamied.me/about/",
     "/wsl": "https://wsl.tips",
+    "/rick": "https://www.youtube.com/watch?v=DLzxrzFCyOs",
 }
 
 
@@ -44,5 +45,5 @@ function getOriginalPath(req) {
 }
 
 function getRedirectForPath(originalPath) {
-    return redirects[originalPath] ?? "https://wsl.tips";
+    return redirects[originalPath] ?? "https://www.youtube.com/watch?v=DLzxrzFCyOs";
 }
