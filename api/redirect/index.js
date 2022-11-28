@@ -1,8 +1,13 @@
 
 const redirects = {
-    "/wsl": "https://wsl.tips",
-    "/stuartleeks": "https://stuartleeks.com",
+    "/swa": "https://learn.microsoft.com/en-us/azure/static-web-apps/overview",
+    "/functions": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview",
+    "/service-bus": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview",
+    "/signalr": "https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-overview",
     "/microsoft": "https://microsoft.com",
+    "/stuartleeks": "https://stuartleeks.com",
+    "/jameidalton": "https://jamied.me/about/",
+    "/wsl": "https://wsl.tips",
 }
 
 
