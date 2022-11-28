@@ -61,6 +61,12 @@
 			]
 		},
 		{
+			"route": "/demo",
+			"methods": [
+				"GET"
+			]
+		},
+		{
 			"route": "/*",
 			"rewrite": "/api/redirect"
 		}
