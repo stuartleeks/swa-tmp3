@@ -6,7 +6,7 @@ const redirects = {
     "/signalr": "https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-overview",
     "/microsoft": "https://microsoft.com",
     "/stuartleeks": "https://stuartleeks.com",
-    "/jameidalton": "https://jamied.me/about/",
+    "/jamiedalton": "https://jamied.me/about/",
     "/wsl": "https://wsl.tips",
 }
 
